@@ -1,47 +1,68 @@
 # Digantra-Assignment
-# Question 1:
- # A) High-Level Analytics for a Single Day:
+**Overview:**
 
-Download and load the dataset (sort-minRange.csv) using Python and Pandas.
-Analyze the data to find metrics like the total number of conjunctions or average time of closest approach for a single day.
+Conjunctions in space occur when two or more Resident Space Objects (RSOs) in Earth's orbit approach each other dangerously, potentially leading to collision scenarios. This assignment focuses on analyzing and visualizing predicted conjunctions of active satellites in space. The dataset provided contains information about RSOs involved in conjunction scenarios, including attributes such as NORAD Catalog IDs, Object Names, Time of Closest Approach (TCA), and risk assessment parameters.
 
+**Data Source:**
 
-# B) Conjunctions Data for a Single Satellite:
+The sample dataset for predicted conjunctions can be downloaded from CelesTrak.
 
-Pick a satellite using NORAD ID or Object Name and filter the data.
-Create visualizations (e.g., line plots) to show the satellite's conjunctions over time.
+Details of the RSOs predicted to be in conjunction can be viewed at CelesTrak Satcat.
 
+**Questions:**
 
+**Question 1:**
 
-# Question 2:
-Load the entire dataset.
-Analyze the dataset for trends and changes over approximately five days.
-Use metrics like the total number of conjunctions or specific metrics for a particular satellite over the given timeframe.
+A) **Derive High-Level Analytics for a Single Day**
 
-Example Metric: Number of conjunctions for NORAD ID 12345 over 7 days:
+**Objective:** Provide general analytics for the entire set of conjunction scenarios for a single day.
 
-Filter the data for NORAD ID 12345.
-Analyze to find the number of conjunctions over the 7-day period.
-Assumptions:
-Ensure the data is clean and accurate.
-Apply the defined criteria for conjunctions.
-Exclude decommissioned or non-functional satellites.
-Consider celestial mechanics in your analysis.
-Factor in the predetermined response time for operators.
-Account for predefined risk tolerance levels.
-Be aware of external factors impacting conjunction assessments.
-Instructions:
-Download Data:
+**Example Metric:** Number of conjunctions among active satellites.
 
-Get "sort-minRange.csv" from CelesTrak.
-Tools:
+B) **Represent Conjunctions Data of a Single Satellite**
 
-Make sure you have Python, Pandas, Dash, and Plotly installed.
-Code Implementation:
+**Objective:** Provide intuitive analytics and visualizations for a single satellite or a satellite constellation.
 
-Write Python code to load, clean, and analyze the data.
-Consider using Dash and Plotly for interactive visualizations.
-Documentation:
+**Focus:** Enable decision-making from a satellite operator’s perspective.
 
-Document your code clearly, explaining steps and assumptions.
-Feel free to seek assistance if you encounter any challenges or have specific questions during the implementation.
+**Question 2:**
+
+**Objective:** Utilize the entire dataset spanning approximately five days to derive analytics and visualize the data, considering the evolution from the first day.
+
+**Example Metric:** Number of conjunctions for the RSO with NORAD ID 12345 over a period of 7 days.
+
+**Assumptions:**
+
+**Data Integrity:**
+
+Assumed that the provided data accurately represents conjunction scenarios, accounting for potential limitations or known inaccuracies.
+
+**Conjunction Definition:**
+
+Defined based on criteria such as minimum separation distance, relative speed, and maximum probability of collision.
+
+**Active Satellites:**
+
+"Active satellites" refer to operational satellites currently in use, excluding decommissioned or non-functional satellites from the analysis.
+
+**Orbital Dynamics:**
+
+Assumed that the orbital dynamics of the satellites follow established laws of celestial mechanics without significant perturbing forces.
+
+**Response Time:**
+
+A predetermined response time for satellite operators to take action after being alerted about a potential conjunction is assumed.
+
+**Risk Tolerance:**
+
+Predefined risk tolerance levels or thresholds guide decision-making in conjunction scenarios.
+
+**External Factors:**
+
+External factors like space weather conditions or communication delays may impact conjunction assessments.
+
+**Instructions:**
+
+1. Download the sample dataset "sort-minRange.csv" from the provided CelesTrak link.
+
+2. Ensure you have the necessary tools (Python, pandas, Dash, Plotly) installed to run the provided code for data visualization.
